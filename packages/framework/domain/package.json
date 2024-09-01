@@ -1,0 +1,35 @@
+{
+  "name": "@aviene/domain",
+	"description": "Common code for working with the Core Node.js framework in the domain layer",
+  "version": "1.0.0",
+	"private": true,
+  "type": "module",
+  "sideEffects": false,
+	"exports": {
+		".": {
+			"import": "./dist/domain.js",
+			"types": "./dist/domain.d.ts"
+		}
+	},
+  "scripts": {
+		"dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix"
+  },
+  "directories": {
+    "lib": "dist",
+    "src": "src"
+  },
+	"publishConfig": {
+		"access": "public",
+		"directory": "dist"
+	},
+  "dependencies": {
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+  }
+}
